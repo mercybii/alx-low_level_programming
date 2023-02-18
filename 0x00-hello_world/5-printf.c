@@ -5,6 +5,6 @@
 */
 int  main(void)
 {
-puts("\"programing is lke building a multilingual puzzle");
+printf("\"programing is lke building a multilingual puzzle");
 return (0);
 }
