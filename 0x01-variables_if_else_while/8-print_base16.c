@@ -1,19 +1,22 @@
 #include <stdio.h>
+
 /**
-*lowercase alphabet in reverse
-*newline
+ * main- Entry point
+ *
+ * Return: Always 0 (success)
  */
+
 int main(void)
 {
-char c;
-c = 'a';
-while
-	(c >= 'a')
-	{
-		putchar(c);
-		c--;
-	}
-putchar('\n');
-return (0);
+	int i;
 
+	for (i = 0; i < 10; i++)
+		putchar(i + '0');
+
+	for (i = 'a'; i <= 'f'; i++)
+		putchar(i);
+
+	putchar('\n');
+
+	return (0);
 }
