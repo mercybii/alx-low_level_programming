@@ -3,19 +3,17 @@
 /**
  *main-all single digit numbers of base 10 starting from 0
  *
- *Return: always 0
+ *Return: Always 0 (success)
  */
 
 int main(void)
-
 {
-	int c = '0';
+	int i;
 
-	while (c <= '9')
-	{
-		putchar (c);
-		c++;
-	}
-	putchar ('\n');
-	return (0);
+	for (i = '0'; i < 10; i++)
+		putchar(i);
+
+	putchar('\n');
+
+	return(0);
 }
