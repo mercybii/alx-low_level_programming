@@ -1,15 +1,21 @@
 #include <stdio.h>
+
 /**
- * owercase alphabet in reverse
- * new line
+ *main-  Entry point
+ *
+ *Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	char letter;
+	char letter = 'z';
 
-	for (letter = 'z'; letter > = 'a'; letter--)
-		putchar (letter);
+	while (letter >= 'a')
+
+	{
+		putchar(letter);
+		letter--;
+	}
 
 	putchar('\n');
 
