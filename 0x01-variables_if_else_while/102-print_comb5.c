@@ -1,8 +1,11 @@
 #include <stdio.h>
+
 /**
- * print all possible diffrent combination of three digits
- * rainging from 0-9
+ *main- Entry point
+ *
+ *Return: Always 0 (Success)
  */
+
 int main(void)
 {
 
@@ -23,10 +26,10 @@ int main(void)
 			if (j != 98 || j)
 			{
 				putchar(',');
-				putchar('');
+				putchar(' ');
 			}
 		}
 	}
 }
-retun 0;
+return (0);
 }
