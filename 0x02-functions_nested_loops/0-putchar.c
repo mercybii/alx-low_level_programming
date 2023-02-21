@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * mai -Eentry point
+ * main -Eentry point
  *
  * Return: Always 0 S(sucess)
  */
