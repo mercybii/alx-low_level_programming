@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * main -Eentry point
- *
- * Return: Always 0 S(sucess)
+ *main- Entry point
+ *decription: print putchar
+ *Return: Always 0 (Sucess)
  */
 
-int main (void)
+int main(void)
 {
 	_putchar('_');
 	_putchar('p');
@@ -16,9 +16,5 @@ int main (void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
-
 	return (0);
-
-
-
 }
