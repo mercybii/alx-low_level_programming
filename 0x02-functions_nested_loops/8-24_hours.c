@@ -1,33 +1,25 @@
 #include "main.h"
 
 /**
- *main- Entry point
- *decription: print putchar
- *Return: Always 0 (Sucess)
+ *jack_bauer- Entry point
+ *Description: Prints every minute os the day starting from 00:00 to 23:59
+ *Return: void
  */
 
 void jack_bauer(void)
-
 {
-	int a, b, c, d;
+	int hours, minutes;
 
-	for (a = 0; a <= 2; a++)
+	for (hours = 0; hours < 24; hours++)
 	{
-		for (b = 0; b <= 9; b++)
+		for (minutes = 0; minutes < 60; minutes++)
 		{
-			if ((a <= 1 && b <= 9) || (a <= 2 && b <= 3))
-			{
-				for (c = 0; c <= 5; c++)
-				{
-					for (d = 0; d <= 9; d++)
-						_putchar(a + '0');
-					_putchar(b + '0');
-					_putchar(58);
-					_putchar(c + '0');
-					_putchar(d + '0');
-					_putchar('\n');
-				}
-			}
+			_putchar((hours / 10) + '0');
+			_putchar((hours % 10) + '0');
+			_putchar(':');
+			_putchar((minutes / 10) + '0');
+			_putchar((minutes % 10) + '0');
+			_putchar('\n');
 		}
 	}
 }
