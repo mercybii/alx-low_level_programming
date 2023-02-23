@@ -1,15 +1,13 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - Check the code
- *
- * Return: Always 0
+ * mul - Entry point
+ * Description: Multiplies 2 integers
+ * @a: Carrier variable
+ * @b: Carrier variable
+ * Return: a * b
  */
-int main(void)
+int mul(int a, int b)
 {
-	printf("%d\n", mul(98, 1024));
-	printf("%d\n", mul(-402, 4096));
-
-	return (0);
+	return (a * b);
 }
