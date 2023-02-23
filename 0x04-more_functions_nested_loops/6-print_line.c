@@ -1,23 +1,24 @@
 #include "main.h"
-
 /**
- * more_numbers - Entry point
- * Description: Prints 10 times 0 - 14
- * Return: void
+ * print_line - Entry point
+ * Description: Draws a straight line in the terminal
+ * @n: Carrier integer variable
+ * Return: 0
  */
-void more_number(void)
-{
-	int i, j;
 
-	for (i = 0; i <= 9; i++)
+void print_line(int n)
 {
-	for (j = 0; j <= 14; j++)
+	int i;
+
+	if (n <= 0)
 	{
-		if (j >= 10)
-		{
-			_putchar((j / 10) + '0');
-		}
-		_putchar((j % 10) + '0');
-	}
-}
+		_putchar('\n');
+		return;
 
+	}
+	for (i = 0; i < n; i++)
+	{
+		_putchar('_');
+	}
+	_putchar('\n');
+}
