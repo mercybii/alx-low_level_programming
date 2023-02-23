@@ -1,4 +1,4 @@
-#include  "main.h"
+#include "main.h"
 
 /**
  * print_diagonal - Entry point
@@ -6,6 +6,7 @@
  * @n: Carrier integer variable
  * Return: void
  */
+
 void print_diagonal(int n)
 {
 	int i, j;
@@ -15,13 +16,13 @@ void print_diagonal(int n)
 		_putchar('\n');
 		return;
 	}
-			for (j = 0; j < n; i++)
-			{
-				for (j = 0; j < i; j++)
-				{
-					_putchar(' ');
-				}
-				_putchar('\\');
-				_putchar('\n');
-			}
+	for (i = 0; i < n; i++)
+	{
+		for (j = 0; j < i; j++)
+		{
+			_putchar(' ');
+		}
+		_putchar('\\');
+		_putchar('\n');
+	}
 }
