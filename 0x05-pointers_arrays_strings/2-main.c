@@ -9,10 +9,10 @@
 int main(void)
 {
 	 char *str;
-    int len;
+	 int len;
 
-    str = "My first strlen!";
-    len = _strlen(str);
-    printf("%d\n", len);
-    return (0);
+	 str = "My first strlen!";
+	 len = _strlen(str);
+	 printf("%d\n", len);
+	 return (0);
 }
