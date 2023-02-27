@@ -1,11 +1,14 @@
+#include "main.h"
 #include <stdio.h>
- /**
- *  puts2 - Entry point
+
+/**
+ * puts2 - Entry point
  * Description:  prints every other character of a string
  * starting with the first character
  * @str: String to be printed
  * Return: void
  */
+
 void puts2(char *str)
 {
 	int i;
@@ -16,7 +19,6 @@ void puts2(char *str)
 		{
 			putchar(str[i]);
 		}
-		printf("%c", str[i]);
 	}
-	printf("\n");
+	putchar('\n');
 }
