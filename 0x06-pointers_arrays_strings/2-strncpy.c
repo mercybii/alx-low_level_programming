@@ -1,12 +1,11 @@
 #include "main.h"
 
- /**
- *
- * *_strncpy - copy a string
- * @dest: input value
- * @src: input value
- * @n: input value
- *
+/**
+ * _strncpy - Entry point
+ * Description: Copies a string up to a specified byte.
+ * @dest: The destination buffer
+ * @src: The source string
+ * @n: The maximum number of bytes to be copied
  * Return: dest
  */
 
