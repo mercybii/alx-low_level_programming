@@ -1,23 +1,23 @@
-lines (18 sloc)  278 Bytes
-
 #include "main.h"
 
 /**
- * *_memset - fills memory with a constant byte
- * @s: pointer
- * @b: constant byte
+ * *_memcpy - copies the memory area
+ * @dest: destination memory
+ * @src: source memory
  * @n: number of bytes
- * Return: pointer s
+ *
+ * Return: pointer to dest
  */
 
-char *_memset(char *s, char b, unsigned int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	int x = 0;
+	int a = n;
 
-	for (; n > 0; x++)
+	for (; x < a; x++)
 	{
-		s[x] = b;
+		dest[x] = src[x];
 		n--;
 	}
-	return (s);
+	return (dest);
 }
