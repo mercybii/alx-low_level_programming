@@ -1,45 +1,43 @@
-#include "main.h"
-#include <stddef.h>
 #include <stdlib.h>
+#include <stdio.h>
+#include "main.h"
 
 /**
- * str_concat - Entry point
- * Description: Concatenates two strings
- * @s1:
- * Destination string
- * @s2: sources string
- *
- * Return: Apointer to s3
+ * str_concat - this function concatenantes two strings
+ * @s1: string one
+ * @s2: string two
+ * Return: concat of the two strings
  */
 
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int i, j = 0, len = 0;
-	char *s3;
+	char *cct;
+	int a;
+	int b;
 
 	if (s1 == NULL)
-	{
 		s1 = "";
-	}
 	if (s2 == NULL)
-	{
 		s2 = "";
-	}
-	for (i = 0; s1[i] != '\0' || s2[i] != '\0'; i++)
-	{
-		len++;
-	}
-
-	s3 = malloc(len * sizeof(char));
-
-	if (s3 == NULL)
-	{
+	a = b = 0;
+	while (s1[a] != '\0')
+		a++;
+	while (s2[b] != '\0')
+		b++;
+	cct = malloc(sizeof(char) * (a + b + 1));
+	if (cct == NULL)
 		return (NULL);
-	}
-
-	for (i = 0; s1[i] != '\0'; i++)
+	a = b = 0;
+	while (s1[a] != '\0')
 	{
-		s3[j++] = s2[i];
+		cct[a] = s1[a];
+		a++;
 	}
-	return (s3);
+	while (s2[b] != '\0')
+	{
+		cct[a] = s2[b];
+		a++, b++;
+	}
+	cct[a] = '\0';
+	return (cct);
 }
