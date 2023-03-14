@@ -2,13 +2,12 @@
 #include <stdlib.h>
 
 /**
- * free _grid -  Entry point
- * Description: frees a 2 D grid
- *
+ * free_grid - Entry point
+ * Description: Frees a 2D grid
  * @grid: grid to be freed
- * @height : height of the grid
+ * @height: Height of the grid
  *
- * Return: void
+ * Return: Void
  */
 
 void free_grid(int **grid, int height)
