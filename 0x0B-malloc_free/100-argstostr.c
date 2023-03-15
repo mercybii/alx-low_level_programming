@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- *argstostr - Entry point
- *@ac: Number of args passed to the program
+ * argstostr - Entry point
+ * @ac: Number of args passed to the program
  * @av: An array pointer to the string
  *
- *Return: Apointer to new string
+ * Return: Apointer to a new string
  */
 
 char *argstostr(int ac, char **av)
@@ -27,17 +27,16 @@ char *argstostr(int ac, char **av)
 		len++;
 	}
 	s1 = malloc((len + 1) * sizeof(char));
-
 	if (s1 == NULL)
 	{
 		return (NULL);
 	}
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; av[i][j] i = '\0'; j++)
+		for (j = 0; av[i][j] != '\0'; j++)
 		{
 			s1[k] = av[i][j];
-
+			k++;
 		}
 		s1[k] = '\n';
 		k++;
