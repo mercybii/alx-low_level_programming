@@ -1,9 +1,9 @@
-#include <stdio.h>
-#include "list.h"
+#include <stdlib.h>
+#include "lists.h"
 
 /**
- * free_list - free list_t list
- * @head: A pointer to list list
+ * free_list - Frees list_t list
+ * @head: A pointer to list_t list
  *
  * Return: void
  */
