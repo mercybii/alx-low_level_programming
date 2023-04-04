@@ -1,4 +1,4 @@
-#include "stdlib.h"
+#include <stdlib.h>
 #include <stdio.h>
 #include "lists.h"
 
@@ -8,7 +8,7 @@
  *
  * @head: A point to the head of the listint_t list
  *
- * Return: void
+ * Return: nothing
  */
 
 
