@@ -1,12 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "lists.h"
 
 /**
  * free_listint2 - free nodes in listint_t list
  *
  * @head: A pointer to the address of the head
- *
- * in listint_list
  *
  * Return: void
  *
@@ -14,16 +13,18 @@
 
 void free_listint2(listint_t **head)
 {
-	listint_t *tem, *current;
+	listint_t *node;
 
-	if (head == NULL)
-		return;
-	current = *head;
-	while (current != NULL)
+	if (head == NULL || *head == NULL)
 	{
-		temp = current;
-		current = current->next;
-		free(temp);
+		return;
+	}
+	while (*head)
+	{
+		node = (*head)->next;
+		free(*head);
+		*head = node;
+
 	}
 	*head = NULL;
 }
