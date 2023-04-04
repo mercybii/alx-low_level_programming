@@ -1,5 +1,8 @@
 #include "stdlib.h"
 #include <stdio.h>
+#include "lists.h"
+
+
 /**
  * free_listint - free lintin_t list
  *
@@ -11,15 +14,12 @@
 
 void free_listint(listint_t *head)
 {
-	listint_t *current;
+	listint_t *x;
 
-
-	while (head != NULL)
-	{
-		curent = head->next;
-		free(head);
-		head = current;
-	}
-	return ();
-
+		while (head != NULL)
+		{
+			x = head;
+			head = head->next;
+			free(x);
+		}
 }
