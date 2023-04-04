@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "lists.h"
 
 /**
- * add_nodeint - Add a new node at the beginning of a singly
- * linked list(listint_t)
+ * add_nodeint - Add a new node
  *
  * @head: it is the first node
  *
@@ -13,12 +13,12 @@
  *
  */
 
-istint_t *add_nodeint(listint_t **head, const int n)
+listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *add;
 
 	add = malloc(sizeof(listint_t));
-	if (add == null)
+	if (add == NULL)
 		return (NULL);
 
 	add->n = n;
@@ -27,4 +27,4 @@ istint_t *add_nodeint(listint_t **head, const int n)
 	*head = add;
 
 	return (add);
-
+}
