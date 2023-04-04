@@ -1,9 +1,12 @@
 #include "lists.h"
+#include <stdio.h>
 
 /**
  * add_nodeint - add a new node at the beginning
  * of a singly linked list (listint_t)
+ *
  * @head: a point to the head of the listint_t list
+ *
  * @n: the value of the new node added to the list
  *
  * Return: the added node
