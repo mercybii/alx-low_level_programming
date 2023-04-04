@@ -3,12 +3,12 @@
 #include <stdlib.h>
 
 /**
- * pop_listint - delete a head node of listint_t
- * 
+ * pop_listint - this code will delete the first node and return its data
+ *
  * @head: the first node
  *
  *
- * Return - the head node’s data (n).
+ * Return: the head node’s data (n).
  *
  */
 
