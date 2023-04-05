@@ -5,9 +5,7 @@
 /**
  * delete_nodeint_at_index - delete node of nth at the index
  *
- * @head: point to the first node of the adress
- *
- * @unsigned int: the node to be deleted
+ * @head: point to the first node
  *
  * @index: the node index to be deleted
  *
