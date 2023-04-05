@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include "lists.h"
 
-/*
- * listint_count - counts the number of unique node
+/**
+ * print_listint_safe - counts the number of unique node
  *
  * @head: point to the head of the listint_t
  *
