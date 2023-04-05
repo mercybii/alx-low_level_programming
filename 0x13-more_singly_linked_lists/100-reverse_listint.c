@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * reverse_listint - reverse listint_t linked list
+ * reverse_listint - reverse  linked list
  *
  * @head: Pointer to the first node
  *
@@ -13,17 +13,17 @@
 
 listint_t *reverse_listint(listint_t **head)
 {
-	listint_t *p = NULL;
+	listint_t *previous = NULL;
 	listint_t *next = NULL;
 
 	while (*head)
 	{
 		next = (*head)->next;
-		(*head)->next = p;
-		p = *head;
+		(*head)->next = previous;
+		previous = *head;
 		*head = next;
 	}
-	*head = p;
+	*head = previous;
 
 	return (*head);
 }
