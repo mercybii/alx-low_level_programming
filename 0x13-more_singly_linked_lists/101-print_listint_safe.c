@@ -3,11 +3,11 @@
 #include "lists.h"
 
 /**
- * print_listint_safe - counts the number of unique node
+ * print_listint_safe - print a listint_t linked list
  *
  * @head: point to the head of the listint_t
  *
- * Return: number of node
+ * Return: number of node in the list
  */
 size_t print_listint_safe(const listint_t *head)
 {
