@@ -3,30 +3,22 @@
 #include"lists.h"
 
 /**
- * get_nodeint_at_index - returns the nth node in a list
- * @head: first node
- * @index: index of the list
- * Return: nth node
+ * sum_listint - return the sum of all the data(n)
+ *
+ * @head: begining of node
+ *
+ * Return: if empty return 0
  */
 
-listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
+int sum_listint(listint_t *head)
 {
+	listint_t *node = head;
+	int sum = 0;
 
-	listint_t *checker_node = head;
-	unsigned int counter = 0;
-
-
-	while (checker_node != NULL)
+	while (node != NULL)
 	{
-		if  (counter == index)
-			return (checker_node);
-
-		else
-			counter++;
-		checker_node = checker_node->next;
-
+		sum = sum + node->n;
+		node = node->next;
 	}
-
-
-	return (NULL);
+	return (sum);
 }
