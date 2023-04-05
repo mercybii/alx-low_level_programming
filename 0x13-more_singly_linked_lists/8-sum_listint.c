@@ -3,9 +3,9 @@
 #include"lists.h"
 
 /**
- * sum_listint - return the sum of all the data(n)
+ * sum_listint - sum of all the data(n)
  *
- * @head: begining of node
+ * @head: first node
  *
  * Return: if empty return 0
  */
