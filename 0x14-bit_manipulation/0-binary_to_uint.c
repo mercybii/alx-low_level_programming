@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * binar_to_uint - convert a binary number to unsigned int
+ * binary_to_uint - convert a binary number to unsigned int
  *
  * @b: A pointer to the first symbol in binary string
  *
