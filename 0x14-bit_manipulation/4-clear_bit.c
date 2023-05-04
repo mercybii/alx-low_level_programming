@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * set_bit - at a given index set value of bit to 0
+ * clear_bit - at a given index set value of bit to 0
  *
  * @n: set the binary number to 0
  * @index: to be set to 0
