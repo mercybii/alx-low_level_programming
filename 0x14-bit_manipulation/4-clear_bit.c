@@ -12,7 +12,7 @@
  *
  */
 
-int set_bit(unsigned long int *n, unsigned int index)
+int clear_bit(unsigned long int *n, unsigned int index)
 {
 	if (index >= sizeof(unsigned int) * 8)/*index should be within the range*/
 
