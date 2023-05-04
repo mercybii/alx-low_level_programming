@@ -20,4 +20,5 @@ void print_binary(unsigned long int n)
 	}
 	putchar((n & 1) ? '1' : '0');
 
+
 }
