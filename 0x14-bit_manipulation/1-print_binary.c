@@ -3,13 +3,14 @@
 #include <stdlib.h>
 
 /**
- * print-binary - print a binary  represention of a number
+ * print_binary - print a binary represention of number
  *
- * @n: number to be printed in binary form
+ * @n: A decimal number to be printed in binary form
  *
  * Return: void
- *
  */
+
+
 void print_binary(unsigned long int n)
 {
 	if (n > 1)
@@ -19,5 +20,4 @@ void print_binary(unsigned long int n)
 	}
 	putchar((n & 1) ? '1' : '0');
 
-	return;
 }
