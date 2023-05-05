@@ -14,7 +14,7 @@
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned int bii = n ^ m;/*numb to get the bits to be flipped*/
+	unsigned long int bii = n ^ m;/*number to get the bits to be flipped*/
 	unsigned long int bits = 0; /*count for flipped bits*/
 
 
