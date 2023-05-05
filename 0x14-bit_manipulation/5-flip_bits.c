@@ -8,14 +8,14 @@
  * @n: the number to be flipped
  * @m: the number to be formed
  *
- * Return: the number of bits to flip to get from n to m
+ * Return: flip number of bits from n to m
  *
  */
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned int bii = n ^ m;/*numb to get the bits to be flipped*/
-	unsigned int bits = 0; /*count for flipped bits*/
+	unsigned long int bits = 0; /*count for flipped bits*/
 
 
 	while (bii > 0)
