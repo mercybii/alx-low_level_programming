@@ -28,7 +28,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	bii_read = read(bii_open, tmp, letters); /* file reading */
 	bii_write = write(STDOUT_FILENO, tmp, bii_read); /*file writing to stdout */
 
-	if (bii_open == -1 || bii_read == -1 || bii_write == -1 || bii_write != bii_read)
+	if (bii_open == -1 || bii_read == -1
+			|| bii_write == -1 || bii_write != bii_read)
 	{
 		free(tmp);
 		return (0);
