@@ -34,7 +34,7 @@ if (*head != NULL)
 }
 else
 {
-head2->next = head2->next;
+head2->next = head1->next;
 
 if (head1->next != NULL)
 head1->next->prev = head2;
