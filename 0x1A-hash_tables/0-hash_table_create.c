@@ -5,6 +5,7 @@
 
 /**
  * hash_table_create - creating a new table
+ * wirh specified size
  *
  * @size: is the size of a new table to create
  *
