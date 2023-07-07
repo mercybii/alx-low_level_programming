@@ -12,8 +12,8 @@
 
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	unsigned long int i;
 	hash_table_t *ht;
+	unsigned long int i;
 
 	if (size == 0)
 		return (NULL);
