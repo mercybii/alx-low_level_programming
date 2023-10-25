@@ -1,0 +1,17 @@
+# Makefile for task 3
+
+CC = gcc
+SRC = main.c school.c
+POBJ = $(SRC:.c=.c)
+NAME = school
+RM = rm -f
+
+all: $(OBJ)
+	$(CC) $(SRC) -o $(NAME)
+
+clean:
+	$(RM) $(OBJ)
+
+fclean: clean oclean
+
+re: fclean all
