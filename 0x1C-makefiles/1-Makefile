@@ -1,6 +1,8 @@
 # Makefile for task 1
 
 CC = gcc
+
 SRC = main.c school.c
- all: $(SRC)
-        $(CC) -o task1 $(SRC) -o school
+
+all: $(SRC)
+	$(CC)$(SRC) -o school
